@@ -18,7 +18,7 @@ client.once('ready', () => {
   ).then(presence => {
     console.log(Activity set to ${presence.game ? presence.game.name : 'none'});
   }).catch(console.error);
-
+});
 client.on('message', m => {
  if (m.content.startsWith(`${prefix}ping`)) {
     const pingTypes = [
