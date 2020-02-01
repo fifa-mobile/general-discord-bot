@@ -16,7 +16,7 @@ client.once('ready', () => {
    client.user.setActivity(
     'FIFA ⚽ 21 on PlayStation 🎮 5', { type: 'PLAYING' }
   ).then(presence => {
-    console.log(Activity set to +${presence.game ? presence.game.name : 'none'});
+    console.log(Activity set to ${presence.game ? presence.game.name : 'none'});
   }).catch(console.error);
 
 client.on('message', m => {
